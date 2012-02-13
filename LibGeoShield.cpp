@@ -27,9 +27,9 @@
  ******************************************************************************/
 
 #include <string.h>
-#include <SoftwareSerial_NB.h>
+#include <SoftwareSerial_nb.h>
 #include <LibCompass.h>
-#include "WConstants.h"
+#include <Arduino.h>
 #include "LibGeoShield.h"
 
 
