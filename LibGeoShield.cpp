@@ -27,9 +27,9 @@
  ******************************************************************************/
 
 #include <string.h>
-#include <SoftwareSerial_NB.h>
 #include <LibCompass.h>
 #include <Arduino.h>
+#include <SoftwareSerial.h>
 #include "LibGeoShield.h"
 
 
@@ -44,7 +44,7 @@
 #define G_OFFSET_5V	3437 
 
 LibCompass compass = LibCompass(COMPASS_HW_GEOSHIELD);
-SoftwareSerial_NB gps = SoftwareSerial_NB(GPS_RX_PIN, GPS_TX_PIN);
+SoftwareSerial gps = SoftwareSerial(GPS_RX_PIN, GPS_TX_PIN);
 static char GPS_buff[GPS_BUFF_SIZE];
 
 /******************************************************************************
